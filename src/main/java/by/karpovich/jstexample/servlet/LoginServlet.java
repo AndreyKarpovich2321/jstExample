@@ -1,4 +1,4 @@
-package by.karpovich.jstexample;
+package by.karpovich.jstexample.servlet;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,10 +18,11 @@ public class LoginServlet extends HttpServlet {
         var login = req.getParameter("login");
         var password = req.getParameter("password");
         Map<String, String> errors = new HashMap<>();
-        if (login == null){
+        req.setAttribute("names", Arrays.asList("Pasha", "Misha", "Sasha", "Tom"));
+        if (login == null || login.length() == 0){
             errors.put("login", "login cant be null");
         }
-        if (password == null){
+        if (password == null || password.length() == 0){
             errors.put("password", "password cant be null");
         }
         if (errors.size()>0){

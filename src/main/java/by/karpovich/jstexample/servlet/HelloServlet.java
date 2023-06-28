@@ -1,4 +1,4 @@
-package by.karpovich.jstexample;
+package by.karpovich.jstexample.servlet;
 
 import java.io.*;
 
