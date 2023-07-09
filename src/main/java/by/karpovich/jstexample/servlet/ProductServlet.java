@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 @WebServlet(value = "/products")
 public class ProductServlet extends HttpServlet {
@@ -18,11 +19,13 @@ public class ProductServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         service = new ProductServiceImpl();
+
     }
 
     //findAll, findById, delete
     @Override
-    /*protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         Product first = new Product();
         first.setName("Apple");
         first.setPrice(25);
@@ -40,20 +43,20 @@ public class ProductServlet extends HttpServlet {
         service.delete(first.getId());
         System.out.println("All products: " + service.findAll());
         req.getRequestDispatcher("success.jsp").forward(req,resp);
-    }*/
-
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        var findParam = req.getParameter("find");
-        var deleteParam = req.getParameter("delete");
-        if (isPresent(findParam)){
-            req.setAttribute("product", service.findById(findParam));
-            req.getRequestDispatcher("success.jsp").forward(req, resp);
-        } else if (isPresent(deleteParam)){
-            service.delete(deleteParam);
-            req.setAttribute("products", service.findById(deleteParam));
-            req.getRequestDispatcher("success.jsp").forward(req, resp);
-        }
     }
+
+//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        var findParam = req.getParameter("find");
+//        var deleteParam = req.getParameter("delete");
+//        if (isPresent(findParam)){
+//            req.setAttribute("product", service.findById(findParam));
+//            req.getRequestDispatcher("success.jsp").forward(req, resp);
+//        } else if (isPresent(deleteParam)){
+//            service.delete(deleteParam);
+//            req.setAttribute("products", service.findById(deleteParam));
+//            req.getRequestDispatcher("success.jsp").forward(req, resp);
+//        }
+//    }
 
 
     //create, update
@@ -78,5 +81,7 @@ public class ProductServlet extends HttpServlet {
         return product;
     }
 
-    private static boolean isPresent
+    private static boolean isPresent(String id){
+         return id != null && id.isEmpty();
+    }
 }

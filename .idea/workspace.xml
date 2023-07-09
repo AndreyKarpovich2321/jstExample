@@ -10,8 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd2ec4c6-0064-4233-9502-5e792ea939b3" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/karpovich/jstexample/servlet/HomeworkServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/homework_25.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/karpovich/jstexample/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/karpovich/jstexample/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/karpovich/jstexample/servlet/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/karpovich/jstexample/servlet/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/success.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -73,13 +79,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/jstExample",
+    "last_opened_file_path": "D:/mysql-connector-java-8.0.25.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -208,6 +223,8 @@
       <workItem from="1687968550247" duration="92000" />
       <workItem from="1687969143345" duration="916000" />
       <workItem from="1687976548349" duration="1513000" />
+      <workItem from="1688842814912" duration="1179000" />
+      <workItem from="1688901268124" duration="11177000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1687969831027</created>

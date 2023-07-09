@@ -45,6 +45,7 @@
     </c:choose>
 </c:forEach>
 <a href="/products">here</a>
+<a href="/homework_25.jsp">Homework 25</a>
 
 </body>
 </html>
